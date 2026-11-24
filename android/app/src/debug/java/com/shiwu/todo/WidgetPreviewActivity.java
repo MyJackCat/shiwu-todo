@@ -24,7 +24,7 @@ public class WidgetPreviewActivity extends Activity {
 
         FrameLayout host = new FrameLayout(this);
         root.addView(host, new FrameLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, Math.round(520 * density)));
+                ViewGroup.LayoutParams.MATCH_PARENT, Math.round(300 * density)));
 
         RemoteViews views = TodoWidgetProvider.build(this);
         View content = views.apply(this, host);

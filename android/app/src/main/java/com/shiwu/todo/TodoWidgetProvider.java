@@ -69,7 +69,7 @@ public class TodoWidgetProvider extends AppWidgetProvider {
             views.addView(R.id.widget_rows, empty);
             views.setTextViewText(R.id.widget_footer, footer(snapshot, 0));
         } else {
-            int shown = Math.min(tasks.size(), 5);
+            int shown = Math.min(tasks.size(), 4);
             for (int i = 0; i < shown; i++) {
                 JSONObject task = tasks.get(i);
                 String taskId = task.optString("id");
