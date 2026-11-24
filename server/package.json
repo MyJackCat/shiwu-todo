@@ -1,0 +1,24 @@
+{
+  "name": "@shiwu/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.ts",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/index.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test test/store.test.ts test/api.test.ts test/scheduler.test.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "@types/web-push": "^3.6.4",
+    "typescript": "^5.9.3"
+  }
+}

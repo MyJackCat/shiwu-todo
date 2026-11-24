@@ -1,0 +1,47 @@
+{
+  "name": "shiwu-todo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "事务待办：手机 / 电脑 / 桌面小组件 / 安卓主屏小组件，Web 同步，定时提醒",
+  "license": "MIT",
+  "author": "MyJackCat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyJackCat/shiwu-todo.git"
+  },
+  "homepage": "https://github.com/MyJackCat/shiwu-todo#readme",
+  "bugs": {
+    "url": "https://github.com/MyJackCat/shiwu-todo/issues"
+  },
+  "keywords": [
+    "todo",
+    "reminder",
+    "pwa",
+    "electron",
+    "android",
+    "self-hosted"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "server",
+    "web",
+    "desktop"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "build": "npm run build -w web",
+    "start": "npm run start -w server",
+    "desktop": "npm run start -w desktop",
+    "test": "npm run test -w server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web",
+    "icons": "node tools/make-icons.mjs"
+  },
+  "allowScripts": {
+    "electron": true,
+    "esbuild": true
+  }
+}
