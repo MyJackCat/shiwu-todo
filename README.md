@@ -6,10 +6,33 @@
 
 自托管的待办 + 定时提醒系统：手机、电脑、安卓主屏小组件、Windows 桌面小组件实时同步，到点在自己的服务器和每个客户端上提醒。
 
+> Self-hosted todo & timed-reminder app for web, Windows desktop and Android home-screen widgets. Real-time sync and native notifications.
+
 - **事务待办**：没有时间的普通待办
 - **定时提醒**：指定时间/时间段的提醒，支持每天、工作日、每周、每月重复，支持提前提醒
 - **四种入口**：PWA 网页、Windows 桌面端（Electron）、安卓 App、桌面/手机桌面小组件
 - **数据自持**：Node.js + SQLite，部署在自己的电脑或 NAS 上
+
+## 截图
+
+以下截图使用演示数据。
+
+**网页 / PWA（桌面布局与手机布局）**
+
+<p align="center">
+  <img src="docs/screenshots/web-desktop.png" width="620" alt="网页端桌面布局">
+  <img src="docs/screenshots/web-mobile.png" width="200" alt="手机 PWA">
+</p>
+
+**Windows 桌面小组件 · 桌面宠物（收起）· 安卓主屏小组件**
+
+<p align="center">
+  <img src="docs/screenshots/desktop-widget.png" width="280" alt="Windows 桌面小组件">
+  <img src="docs/screenshots/desktop-pet.png" width="140" alt="桌面宠物">
+  <img src="docs/screenshots/android-widget.png" width="380" alt="安卓主屏小组件">
+</p>
+
+安卓小组件截图为调试预览页，展示的是实际 RemoteViews 渲染效果。
 
 ## 架构
 
